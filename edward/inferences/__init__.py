@@ -9,10 +9,10 @@ from edward.inferences.conjugacy import *
 from edward.inferences.gan_inference import *
 # from edward.inferences.gibbs import *
 # from edward.inferences.hmc import *
-from edward.inferences.implicit_klqp import *
 from edward.inferences.inference import *
 from edward.inferences.klpq import *
 from edward.inferences.klqp import *
+from edward.inferences.klqp_implicit import *
 from edward.inferences.laplace import *
 from edward.inferences.map import *
 # from edward.inferences.metropolis_hastings import *
@@ -28,18 +28,14 @@ _allowed_symbols = [
     'bigan_inference',
     'complete_conditional',
     'gan_inference',
-    'implicit_klqp',
     'Gibbs',
     'HMC',
     'klpq',
     'klqp',
-    'reparameterization_klqp',
-    'reparameterization_kl_klqp',
-    'reparameterization_entropy_klqp',
-    'score_klqp',
-    'score_kl_klqp',
-    'score_entropy_klqp',
-    'score_rb_klqp',
+    'klqp_implicit',
+    'klqp_reparameterization',
+    'klqp_reparameterization_kl',
+    'klqp_score',
     'laplace',
     'map',
     'MetropolisHastings',
