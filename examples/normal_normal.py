@@ -12,7 +12,7 @@ import tensorflow as tf
 from edward.models import Empirical, Normal
 from edward.util import get_session, Progbar
 
-ed.set_seed(42)
+tf.set_random_seed(42)
 
 # DATA
 x_data = np.array([0.0] * 50)
