@@ -30,7 +30,7 @@ loss, grads_and_vars = ed.klqp({mu: qmu}, data={x: x_data})
 train_op = tf.train.AdamOptimizer().apply_gradients(grads_and_vars)
 progbar = Progbar(1000)
 sess = get_session()
-tf.global_variables_initializer().run()
+sess.run(tf.global_variables_initializer())
 for t in range(1, 1001):
   loss_val, _ = sess.run([loss, train_op])
   if t % 50 == 0:
